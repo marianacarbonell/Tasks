@@ -9,7 +9,7 @@ function App() {
    <nav className="navbar navbar-dark bg-dark">
             <a href="" className="text-white">
             
-            Tareas
+            Tareas!!
             
             </a>
             
