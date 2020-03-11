@@ -1,21 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import {todos} from './todos.json';
 
 
-function App() {
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      todos
+    }
+  }
+
+  render(){
+    this.state.todos.map((todo, i) =>{
+      return(
+        <div className="card">
+          <div className="card-header">
+            <h3>{todo.tilte}</h3>
+          </div>
+        <div className="card-body">
+      <p>{todo.description}</p>
+
+        </div>
+        </div>
+      )
+    })
+
+
   return (
     <div className="App">
    <nav className="navbar navbar-dark bg-dark">
             <a href="" className="text-white">
             
-            Tareas prueba prueba
+      {todos}
             
             </a>
             
             </nav>
     </div>
   );
+}
 }
 
 export default App;
