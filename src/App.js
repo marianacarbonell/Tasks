@@ -37,6 +37,9 @@ class App extends Component {
         <nav className="navbar navbar-dark bg-dark">
           <a href="" className="text-white">
             Tasks
+            <span className="badge badge-pill badge-light ml-2">
+            {this.state.todos.length}
+            </span>
             </a>
         </nav>
         <div className="container">
