@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { todos } from './todos.json';
+import Formulario from './components/Formulario';
 
 
 class App extends Component {
@@ -30,7 +31,6 @@ class App extends Component {
         </div>
       )
     })
-
 
     return (
       <div className="App">
