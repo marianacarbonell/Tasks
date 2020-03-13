@@ -38,10 +38,18 @@ class App extends Component {
           <a href="" className="text-white">
             Tasks
             <span className="badge badge-pill badge-light ml-2">
-            {this.state.todos.length}
+              {this.state.todos.length}
             </span>
-            </a>
+          </a>
         </nav>
+        <div className="container">
+          <div className="row mt-4">
+            <div className="col-md-3">
+              <Formulario/>
+            </div>
+          </div>
+        </div>
+
         <div className="container">
           <div className="row mt-4">
             {todos}
